@@ -1,0 +1,12 @@
+body h1 {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+.name {
+  width: 100vw;
+  height: 100vw;
+  font-size: 10vw;
+  text-align: center;
+}
