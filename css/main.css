@@ -6,31 +6,49 @@ body, h1, p, a {
   cursor: default;
 }
 
-.navicon {
+.nav {
   position: fixed;
   top: 20px;
   left: 20px;
   padding: 10px;
   width: 60px;
-  height: 60px;
+  height: 50px;
   cursor: pointer;
+  background-color: black;
+}
+
+.navicon {
+  margin: 0 auto;
+  width: 40px;
 }
 
 .navline {
   height: 3px;
-  width: 50px;
+  width: 40px;
   margin-top: 10px;
-  background-color: black;
+  background-color: white;
   transition: ease 0.4s;
 }
 
 
-.navicon:hover .top {
-  width: 40px;
+.nav:hover .top {
+  width: 30px;
 }
 
-.navicon:hover .bottom {
-  width: 60px;
+.nav:hover .bottom {
+  width: 50px;
+}
+
+.top-cross {
+  transform: translateY(13px) rotate(45deg);
+}
+
+.mid-cross {
+  background-color: black;
+}
+
+.bottom-cross {
+  transform: translateY(-13px) rotate(-45deg);
 }
 
 .wrapper {
