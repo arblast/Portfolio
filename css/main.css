@@ -1,10 +1,10 @@
-body, h1 {
+body, h1, p {
   padding: 0px;
   margin: 0px;
   font-family: sans-serif;
 }
 
-.name-wrapper {
+.wrapper {
   height: 100vh;
 }
 
@@ -12,6 +12,15 @@ body, h1 {
   position: relative;
   text-align: center;
   font-size: 20vh;
+  white-space: nowrap;
   top: 50%;
   margin-top: -20vh;
+}
+
+.about {
+  position: relative;
+  text-align: center;
+  font-size: 5vh;
+  top: 50%;
+  transform: translateY(-50%);
 }
