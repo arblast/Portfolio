@@ -6,6 +6,33 @@ body, h1, p, a {
   cursor: default;
 }
 
+.navicon {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.navline {
+  height: 3px;
+  width: 50px;
+  margin-top: 10px;
+  background-color: black;
+  transition: ease 0.4s;
+}
+
+
+.navicon:hover .top {
+  width: 40px;
+}
+
+.navicon:hover .bottom {
+  width: 60px;
+}
+
 .wrapper {
   height: 100vh;
 }
