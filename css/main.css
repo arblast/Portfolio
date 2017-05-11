@@ -4,8 +4,14 @@ body, h1 {
   font-family: sans-serif;
 }
 
-.name {
+.name-wrapper {
   height: 100vh;
-  font-size: 20vh;
+}
+
+.name {
+  position: relative;
   text-align: center;
+  font-size: 20vh;
+  top: 50%;
+  margin-top: -20vh;
 }
