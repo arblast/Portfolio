@@ -1,7 +1,9 @@
-body, h1, p {
+body, h1, p, a {
   padding: 0px;
   margin: 0px;
   font-family: sans-serif;
+  color: black;
+  cursor: default;
 }
 
 .wrapper {
@@ -15,12 +17,30 @@ body, h1, p {
   white-space: nowrap;
   top: 50%;
   margin-top: -20vh;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.about-outer {
+  position: relative;
+  text-align: center;
+  margin: 0 50px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .about {
-  position: relative;
-  text-align: center;
-  font-size: 5vh;
-  top: 50%;
-  transform: translateY(-50%);
+  font-size: 4vh;
+}
+
+.resume {
+  margin-top: 30px;
+  padding: 10px;
+  display: block;
+  cursor: pointer;
+}
+
+.resume:hover {
+  color: red;
+  transition: ease 0.5s;
 }
