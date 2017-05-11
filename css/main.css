@@ -1,3 +1,39 @@
+@-webkit-keyframes arrow {
+  0% {top: 5px;}
+  50% {top: 15px;}
+  100% {top: 5px;}
+}
+
+@keyframes arrow {
+  0% {top: 5px;}
+  50% {top: 15px;}
+  100% {top: 5px;}
+}
+
+@-webkit-keyframes arrow-right {
+  0% {transform: rotate(-135deg);}
+  50% {transform: rotate(-150deg);}
+  100% {transform: rotate(-135deg);}
+}
+
+@keyframes arrow-right {
+  0% {transform: rotate(-135deg);}
+  50% {transform: rotate(-150deg);}
+  100% {transform: rotate(-135deg);}
+}
+@-webkit-keyframes arrow-left {
+  0% {transform: rotate(-135deg);}
+  50% {transform: rotate(-150deg);}
+  100% {transform: rotate(-135deg);}
+}
+
+@keyframes arrow-left {
+  0% {transform: rotate(135deg);}
+  50% {transform: rotate(150deg);}
+  100% {transform: rotate(135deg);}
+}
+
+
 body, h1, p, a {
   padding: 0px;
   margin: 0px;
@@ -6,15 +42,18 @@ body, h1, p, a {
   cursor: default;
 }
 
-.nav {
+.square {
   position: fixed;
-  top: 20px;
-  left: 20px;
   padding: 10px;
+  top: 20px;
   width: 60px;
   height: 50px;
   cursor: pointer;
   background-color: black;
+}
+
+.nav {
+  left: 20px;
 }
 
 .navicon {
@@ -39,6 +78,73 @@ body, h1, p, a {
   width: 50px;
 }
 
+.page-down {
+  right: 20px;
+}
+
+.arrow-line-down {
+  position: absolute;
+  top: 0;
+  left: 28.5px;
+  background-color: white;
+  width: 3px;
+  height: 30px
+}
+
+.arrow {
+  position: relative;
+  top: 5px;
+}
+
+.arrow-bounce {
+  animation: arrow 1s infinite;
+  animation-timing-function: ease;
+  animation-play-state: paused;
+  -webkit-animation: arrow 1s infinite;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-play-state: running;
+}
+
+.arrow-line-right {
+  position: absolute;
+  top: 29px;
+  left: 28.5px;
+  width: 3px;
+  height: 15px;
+  transform: rotate(-135deg);
+  transform-origin: 50% 0%;
+  background-color: white;
+}
+
+.right-arrow-animation {
+  animation: arrow-right 1s infinite;
+  animation-timing-function: ease;
+  animation-play-state: running;
+  -webkit-animation: arrow-right 1s infinite;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-play-state: running;
+}
+
+.arrow-line-left {
+  position: absolute;
+  top: 29px;
+  left: 28.5px;
+  width: 3px;
+  height: 15px;
+  transform: rotate(135deg);
+  transform-origin: 50% 0%;
+  background-color: white;
+}
+
+.left-arrow-animation {
+  animation: arrow-left 1s infinite;
+  animation-timing-function: ease;
+  animation-play-state: running;
+  -webkit-animation: arrow-left 1s infinite;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-play-state: running;
+}
+
 .top-cross {
   transform: translateY(13px) rotate(45deg);
 }
@@ -61,7 +167,7 @@ body, h1, p, a {
   font-size: 20vh;
   white-space: nowrap;
   top: 50%;
-  margin-top: -20vh;
+  transform: translateY(-50%);
   margin-left: 50px;
   margin-right: 50px;
 }
