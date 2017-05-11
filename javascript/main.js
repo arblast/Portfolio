@@ -1,3 +1,7 @@
+const PAGES = {
+  about: 1
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   const nav = document.getElementById('nav');
   const pageDown = document.getElementById('pageDown');
@@ -35,7 +39,22 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   pageDown.onclick = () => {
-    window.scrollTo(0, height);
+    let currentHeight = window.pageYOffset;
+    let targetHeight = height;
+    let interval = (height - currentHeight)/50;
+    let count = 0;
+    if(currentHeight < targetHeight) {
+      let smoothScroll = setInterval(() => {
+        console.log(currentHeight);
+        currentHeight += interval;
+        count += 1;
+        window.scrollTo(0,currentHeight);
+        if(count == 50) {
+          window.scrollTo(0,height);
+          clearInterval(smoothScroll);
+        }
+      }, 10);
+    }
   }
 
 });
