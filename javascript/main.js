@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
       state.navOpen = true;
     }
   };
-  pageDown.onmouseenter = () => {
+  pageDown.onmouseenter = () => {  //scripts for animation of arrow
     arrow.className = "arrow arrow-bounce";
     arrowLeft.className = "arrow-line-left left-arrow-animation";
     arrowRight.className = "arrow-line-right right-arrow-animation";
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     arrowRight.className = "arrow-line-right";
   }
 
-  pageDown.onclick = () => {
+  pageDown.onclick = () => { //script for down arrow
     let currentHeight = window.pageYOffset;
     let targetHeight = height;
     let interval = (height - currentHeight)/50;

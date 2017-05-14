@@ -50,6 +50,7 @@ body, h1, p, a {
   height: 50px;
   cursor: pointer;
   background-color: black;
+  z-index: 99;
 }
 
 .nav {
@@ -88,7 +89,9 @@ body, h1, p, a {
   left: 28.5px;
   background-color: white;
   width: 3px;
-  height: 30px
+  height: 30px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 
 .arrow {
@@ -107,13 +110,14 @@ body, h1, p, a {
 
 .arrow-line-right {
   position: absolute;
-  top: 29px;
+  top: 28.8px;
   left: 28.5px;
   width: 3px;
   height: 15px;
   transform: rotate(-135deg);
   transform-origin: 50% 0%;
   background-color: white;
+  border-top-left-radius: 1px;
 }
 
 .right-arrow-animation {
@@ -127,13 +131,14 @@ body, h1, p, a {
 
 .arrow-line-left {
   position: absolute;
-  top: 29px;
+  top: 28.8px;
   left: 28.5px;
   width: 3px;
   height: 15px;
   transform: rotate(135deg);
   transform-origin: 50% 0%;
   background-color: white;
+  border-top-right-radius: 1px;
 }
 
 .left-arrow-animation {
