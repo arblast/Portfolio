@@ -1,3 +1,4 @@
+/*ANIMATIONS*/
 @-webkit-keyframes arrow {
   0% {top: 5px;}
   50% {top: 15px;}
@@ -33,6 +34,7 @@
   100% {transform: rotate(135deg);}
 }
 
+/*RESET*/
 
 body, h1, p, a {
   padding: 0px;
@@ -41,6 +43,8 @@ body, h1, p, a {
   color: black;
   cursor: default;
 }
+
+/*NAV AND PAGE DOWN ICONS*/
 
 .square {
   position: fixed;
@@ -162,9 +166,14 @@ body, h1, p, a {
   transform: translateY(-13px) rotate(-45deg);
 }
 
+/*BLOCKS ON WEBSITE*/
+
 .wrapper {
   height: 100vh;
+  display: block;
 }
+
+/*NAME PAGE*/
 
 .name {
   position: relative;
@@ -176,6 +185,12 @@ body, h1, p, a {
   margin-left: 50px;
   margin-right: 50px;
 }
+
+.name-page {
+  background-color: #f2f2f2;
+}
+
+/* ABOUT PAGE */
 
 .about-outer {
   position: relative;
@@ -201,10 +216,13 @@ body, h1, p, a {
   transition: ease 0.5s;
 }
 
-.name-page {
-  background-color: #f2f2f2;
-}
-
 .about-page {
   background-color: #e6e6e6;
+}
+
+/*PROJECTS*/
+
+.project {
+  background-color: #d9d9d9;
+  text-align: center;
 }
