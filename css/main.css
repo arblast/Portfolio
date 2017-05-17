@@ -59,10 +59,11 @@ body, h1, p, a {
 
 .nav {
   left: 20px;
+  display: flex;
 }
 
 .navicon {
-  margin: 0 auto;
+  margin: 0 10px 0;
   width: 40px;
 }
 
@@ -81,6 +82,19 @@ body, h1, p, a {
 
 .nav:hover .bottom {
   width: 50px;
+}
+
+.nav-open {
+  width: 250px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link {
+  color: white;
 }
 
 .page-down {
