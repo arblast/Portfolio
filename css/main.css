@@ -1,7 +1,7 @@
 /*ANIMATIONS*/
 @-webkit-keyframes arrow {
   0% {top: 5px;}
-  50% {top: 15px;}
+  25% {top: 15px;}
   100% {top: 5px;}
 }
 
@@ -114,6 +114,7 @@ body, h1, p, a {
 .nav-link {
   color: white;
   transition: ease 0.4s;
+  padding: 5px;
 }
 
 .nav-link:hover {
@@ -130,7 +131,7 @@ body, h1, p, a {
   left: 28.5px;
   background-color: white;
   width: 3px;
-  height: 30px;
+  height: 35px;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
@@ -138,12 +139,13 @@ body, h1, p, a {
 .arrow {
   position: relative;
   top: 5px;
+  transition: ease 0.25s;
 }
 
 .arrow-bounce {
   animation: arrow 1s infinite;
   animation-timing-function: ease;
-  animation-play-state: paused;
+  animation-play-state: running;
   -webkit-animation: arrow 1s infinite;
   -webkit-animation-timing-function: ease;
   -webkit-animation-play-state: running;
@@ -151,10 +153,10 @@ body, h1, p, a {
 
 .arrow-line-right {
   position: absolute;
-  top: 28.8px;
+  top: 33.8px;
   left: 28.5px;
   width: 3px;
-  height: 15px;
+  height: 18px;
   transform: rotate(-135deg);
   transform-origin: 50% 0%;
   background-color: white;
@@ -172,10 +174,10 @@ body, h1, p, a {
 
 .arrow-line-left {
   position: absolute;
-  top: 28.8px;
+  top: 33.8px;
   left: 28.5px;
   width: 3px;
-  height: 15px;
+  height: 18px;
   transform: rotate(135deg);
   transform-origin: 50% 0%;
   background-color: white;
