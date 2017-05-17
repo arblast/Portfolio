@@ -1,5 +1,6 @@
 const PAGES = {
-  about: 1
+  about: 1,
+  projects: 2
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -33,35 +34,43 @@ document.addEventListener('DOMContentLoaded', function() {
       navLinks.style.opacity = 100;
     }
   };
+
+  navLinks.onclick = (e) => {
+    e.stopPropagation();
+    let targetHeight = PAGES[e.target.id]*height;
+    smoothScroll(targetHeight);
+  }
+
   pageDown.onmouseenter = () => {  //scripts for animation of arrow
     arrow.className = "arrow arrow-bounce";
     arrowLeft.className = "arrow-line-left left-arrow-animation";
     arrowRight.className = "arrow-line-right right-arrow-animation";
-  }
+  };
 
   pageDown.onmouseleave = () => {
     arrow.className = "arrow";
     arrowLeft.className = "arrow-line-left";
     arrowRight.className = "arrow-line-right";
-  }
+  };
 
   pageDown.onclick = () => { //script for down arrow
-    let currentHeight = window.pageYOffset;
     let targetHeight = height;
-    let interval = (height - currentHeight)/50;
+    smoothScroll(targetHeight);
+  };
+
+  smoothScroll = (targetHeight) => {
+    let currentHeight = window.pageYOffset;
+    let interval = (targetHeight - currentHeight)/50;
     let count = 0;
-    if(currentHeight < targetHeight) {
-      let smoothScroll = setInterval(() => {
-        console.log(currentHeight);
-        currentHeight += interval;
-        count += 1;
-        window.scrollTo(0,currentHeight);
-        if(count == 50) {
-          window.scrollTo(0,height);
-          clearInterval(smoothScroll);
-        }
-      }, 10);
-    }
-  }
+    let scroll = setInterval(() => {
+      currentHeight += interval;
+      count += 1;
+      window.scrollTo(0,currentHeight);
+      if(count == 50) {
+        window.scrollTo(0,targetHeight);
+        clearInterval(scroll);
+      }
+    }, 10);
+  };
 
 });
