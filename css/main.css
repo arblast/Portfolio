@@ -60,21 +60,34 @@ body, h1, p, a {
 .nav {
   left: 20px;
   display: flex;
+  align-items: center;
+  transition: ease 0.4s;
 }
 
 .navicon {
-  margin: 0 10px 0;
+  margin: 0 10px;
   width: 40px;
 }
 
 .navline {
   height: 3px;
   width: 40px;
-  margin-top: 10px;
   background-color: white;
   transition: ease 0.4s;
 }
 
+.top {
+  margin-bottom: 10px;
+}
+
+.middle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bottom {
+  margin-top: 10px;
+}
 
 .nav:hover .top {
   width: 30px;
@@ -85,16 +98,26 @@ body, h1, p, a {
 }
 
 .nav-open {
-  width: 250px;
+  width: 260px;
 }
 
 .nav-links {
+  width: 180px;
+  margin: 0 10px;
+  visibility: hidden;
+  opacity: 0;
   display: flex;
   justify-content: space-between;
+  transition: ease 0.5s;
 }
 
 .nav-link {
   color: white;
+  transition: ease 0.4s;
+}
+
+.nav-link:hover {
+  color: lightgray;
 }
 
 .page-down {
@@ -169,14 +192,18 @@ body, h1, p, a {
 }
 
 .top-cross {
+  margin-bottom: 10px;
   transform: translateY(13px) rotate(45deg);
 }
 
 .mid-cross {
+  margin-top: 10px;
+  margin-bottom: 10px;
   background-color: black;
 }
 
 .bottom-cross {
+  margin-top: 10px;
   transform: translateY(-13px) rotate(-45deg);
 }
 
