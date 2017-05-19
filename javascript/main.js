@@ -55,11 +55,16 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
   pageDown.onclick = () => { //script for down arrow
-    let targetHeight = height;
-    smoothScroll(targetHeight);
+    clearTimeout(scrollTimer);
+    smoothScroll((closestSection()+1)*height);
   };
 
-  smoothScroll = (targetHeight) => { //function for smooth scrolling
+  function closestSection() {
+    let currentHeight = window.pageYOffset;
+    return Math.round(currentHeight/height);
+  }
+
+  function smoothScroll(targetHeight) { //function for smooth scrolling
     let currentHeight = window.pageYOffset;
     let interval = (targetHeight - currentHeight)/50;
     let count = 0;
@@ -77,9 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
   window.onscroll = () => {
     clearTimeout(scrollTimer);
     scrollTimer = setTimeout(() => {
-      let currentHeight = window.pageYOffset;
-      let targetHeight = Math.round(currentHeight/height)*height;
-      smoothScroll(targetHeight);
+      smoothScroll(closestSection()*height);
     }, 1500);
   };
 });
