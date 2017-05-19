@@ -265,7 +265,26 @@ body, h1, p, a {
 
 /*PROJECTS*/
 
-.projects-page {
-  background-color: #d9d9d9;
+.project {
   text-align: center;
+}
+.project-title {
+  padding: 50px;
+  font-size: 50px;
+}
+
+.recordcloud {
+  background-color: #f68989;
+}
+
+.project-content {
+  display: flex;
+}
+
+.screenshot {
+  margin: 0 50px;
+}
+
+.screenshot img {
+  width: 100%;
 }
