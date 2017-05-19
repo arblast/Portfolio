@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const arrowLeft = document.getElementById('arrowLeft');
   const arrowRight = document.getElementById('arrowRight');
   const height = window.innerHeight;
+  let scrollTimer = null;
   let state = {navOpen: false};
   nav.onclick = () => { //function for turning navbar into cross and back
     if (state.navOpen) {
@@ -58,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
     smoothScroll(targetHeight);
   };
 
-  smoothScroll = (targetHeight) => {
+  smoothScroll = (targetHeight) => { //function for smooth scrolling
     let currentHeight = window.pageYOffset;
     let interval = (targetHeight - currentHeight)/50;
     let count = 0;
@@ -73,4 +74,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 10);
   };
 
+  window.onscroll = () => {
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(() => {
+      let currentHeight = window.pageYOffset;
+      let targetHeight = Math.round(currentHeight/height)*height;
+      smoothScroll(targetHeight);
+    }, 1500);
+  };
 });
