@@ -245,16 +245,16 @@ body, h1, p, a {
 
 .about {
   font-size: 4vh;
+  margin-bottom: 30px;
 }
 
-.resume {
-  margin-top: 30px;
+.links {
   padding: 10px;
   display: block;
   cursor: pointer;
 }
 
-.resume:hover {
+.links:hover {
   color: red;
   transition: ease 0.5s;
 }
@@ -287,6 +287,7 @@ body, h1, p, a {
 
 .project-description {
   margin: 0 50px;
+  font-size: 20px;
 }
 
 .screenshot img {
