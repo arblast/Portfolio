@@ -283,13 +283,20 @@ body, h1, p, a {
 
 .screenshot {
   margin: 0 50px;
+  cursor: pointer;
+}
+
+.screenshot-image {
+  width: 100%;
+  transition: ease 0.5s;
+}
+
+.screenshot:hover .screenshot-image {
+  width: 175%;
+  position: relative;
 }
 
 .project-description {
   margin: 0 50px;
   font-size: 20px;
-}
-
-.screenshot img {
-  width: 100%;
 }

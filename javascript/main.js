@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const arrow = document.getElementById('arrow');
   const arrowLeft = document.getElementById('arrowLeft');
   const arrowRight = document.getElementById('arrowRight');
+  const recordCloudSS = document.getElementById('recordCloudSS');
   const height = window.innerHeight;
   let scrollTimer = null;
   let state = {navOpen: false};
@@ -59,7 +60,14 @@ document.addEventListener('DOMContentLoaded', function() {
     smoothScroll((closestSection()+1)*height);
   };
 
-  function closestSection() {
+  recordCloudSS.onclick = () => {
+    window.open("https://www.record-cloud.com/");
+  }
+
+
+  //SCROLLING
+
+  function closestSection() { //function to find the closest section
     let currentHeight = window.pageYOffset;
     return Math.round(currentHeight/height);
   }
