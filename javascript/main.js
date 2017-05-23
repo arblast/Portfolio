@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const arrowLeft = document.getElementById('arrowLeft');
   const arrowRight = document.getElementById('arrowRight');
   const recordCloudSS = document.getElementById('recordCloudSS');
+  const CACSS = document.getElementById('CACSS');
   const height = window.innerHeight;
   let scrollTimer = null;
   let state = {navOpen: false};
@@ -60,8 +61,13 @@ document.addEventListener('DOMContentLoaded', function() {
     smoothScroll((closestSection()+1)*height);
   };
 
+  //project screenshot links
   recordCloudSS.onclick = () => {
     window.open("https://www.record-cloud.com/");
+  }
+
+  CACSS.onclick = () => {
+    window.open("https://chrome.google.com/webstore/detail/chrome-audio-capture/kfokdmfpdnokpmpbjhjbcabgligoelgp");
   }
 
 

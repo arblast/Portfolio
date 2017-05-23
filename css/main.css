@@ -277,22 +277,27 @@ body, h1, p, a {
   background-color: #f68989;
 }
 
+.cac {
+  background-color: #fb7070;
+}
+
 .project-content {
-  display: flex;
+
 }
 
 .screenshot {
-  margin: 0 50px;
+  margin: 0px 50px 30px 50px;
   cursor: pointer;
+  height: 300px;
 }
 
 .screenshot-image {
-  width: 100%;
+  width: 50%;
   transition: ease 0.5s;
 }
 
 .screenshot:hover .screenshot-image {
-  width: 175%;
+  width: 70%;
   position: relative;
 }
 
