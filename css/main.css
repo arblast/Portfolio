@@ -301,8 +301,16 @@ body, h1, p, a {
 }
 
 .screenshot:hover .screenshot-image {
-  width: 70%;
+  width: 60%;
   position: relative;
+}
+
+.pae .screenshot-image {
+  width: 30%;
+}
+
+.pae .screenshot:hover .screenshot-image {
+  width: 40%;
 }
 
 .project-description {
