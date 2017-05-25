@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const arrowRight = document.getElementById('arrowRight');
   const recordCloudSS = document.getElementById('recordCloudSS');
   const CACSS = document.getElementById('CACSS');
+  const PAESS = document.getElementById('PAESS');
   const height = window.innerHeight;
   let scrollTimer = null;
   let state = {navOpen: false};
@@ -68,6 +69,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
   CACSS.onclick = () => {
     window.open("https://chrome.google.com/webstore/detail/chrome-audio-capture/kfokdmfpdnokpmpbjhjbcabgligoelgp");
+  }
+
+  PAESS.onclick = () => {
+    window.open("https://arblast.github.io/Puzzle-and-Elements/");
   }
 
 
