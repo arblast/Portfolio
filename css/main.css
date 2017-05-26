@@ -298,12 +298,12 @@ body, h1, p, a {
 }
 
 .screenshot-image {
-  width: 50vh;
+  height: 50vh;
   transition: ease 0.5s;
 }
 
 .screenshot:hover .screenshot-image {
-  width: 60vh;
+  height: 60vh;
   position: relative;
 }
 
