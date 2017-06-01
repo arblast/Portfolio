@@ -1,8 +1,10 @@
+const NUM_PROJECTS = 3;
+
 const PAGES = {
   about: 1,
   projects: 2,
-  contact: 3
-}
+  contact: 2 + NUM_PROJECTS
+};
 
 document.addEventListener('DOMContentLoaded', function() {
   const nav = document.getElementById('nav');
