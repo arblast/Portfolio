@@ -323,3 +323,9 @@ body, h1, p, a {
 .contact {
   background-color: lightblue;
 }
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

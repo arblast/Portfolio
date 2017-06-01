@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const recordCloudSS = document.getElementById('recordCloudSS');
   const CACSS = document.getElementById('CACSS');
   const PAESS = document.getElementById('PAESS');
+  const linkedin = document.getElementById('linkedin');
+  const git = document.getElementById('git');
   const height = window.innerHeight;
   let scrollTimer = null;
   let state = {navOpen: false};
@@ -76,6 +78,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
   PAESS.onclick = () => {
     window.open("https://arblast.github.io/Puzzle-and-Elements/");
+  }
+
+  //Contact Links
+
+  linkedin.onclick = () => {
+    window.open("https://www.linkedin.com/in/justice-yen");
+  }
+
+  git.onclick = () => {
+    window.open("https://github.com/arblast");
   }
 
 
