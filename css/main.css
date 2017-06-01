@@ -311,3 +311,15 @@ body, h1, p, a {
   margin: 0 50px;
   font-size: 12px;
 }
+
+/*CONTACT*/
+
+.contact-title {
+  text-align: center;
+  padding: 50px;
+  font-size: 50px;
+}
+
+.contact {
+  background-color: lightblue;
+}

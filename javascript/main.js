@@ -1,6 +1,7 @@
 const PAGES = {
   about: 1,
-  projects: 2
+  projects: 2,
+  contact: 3
 }
 
 document.addEventListener('DOMContentLoaded', function() {
