@@ -36,7 +36,7 @@
 
 /*RESET*/
 
-body, h1, p, a {
+body, h1, p, a, ul, li {
   padding: 0px;
   margin: 0px;
   font-family: sans-serif;

@@ -3,8 +3,14 @@ const NUM_PROJECTS = 3;
 const PAGES = {
   about: 1,
   projects: 2,
-  contact: 2 + NUM_PROJECTS
+  contact: 3 + NUM_PROJECTS
 };
+
+const PROJECTS = {
+  "Record Cloud": 3,
+  "Chrome Audio Capture": 4,
+  "Puzzle and Elements": 5
+}
 
 document.addEventListener('DOMContentLoaded', function() {
   const nav = document.getElementById('nav');
@@ -21,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const PAESS = document.getElementById('PAESS');
   const linkedin = document.getElementById('linkedin');
   const git = document.getElementById('git');
+  const projectList = document.getElementById('project-list');
   const height = window.innerHeight;
   let scrollTimer = null;
   let state = {navOpen: false};
@@ -66,6 +73,12 @@ document.addEventListener('DOMContentLoaded', function() {
     clearTimeout(scrollTimer);
     smoothScroll((closestSection()+1)*height);
   };
+
+  //project nav
+
+  projectList.onclick = (e) => {
+    smoothScroll(PROJECTS[e.target.innerHTML]*height);
+  }
 
   //project screenshot links
   recordCloudSS.onclick = () => {
