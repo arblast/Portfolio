@@ -1,5 +1,5 @@
 const NUM_PROJECTS = 3;
-const height = 600;
+const height = 750;
 const PAGES = {
   about: 1,
   projects: 2,
@@ -125,10 +125,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 10);
   };
 
-  window.onscroll = () => {
-    clearTimeout(scrollTimer);
-    scrollTimer = setTimeout(() => {
-      smoothScroll(closestSection()*height);
-    }, 1500);
-  };
+  // window.onscroll = () => {
+  //   clearTimeout(scrollTimer);
+  //   scrollTimer = setTimeout(() => {
+  //     smoothScroll(closestSection()*height);
+  //   }, 1500);
+  // };
 });
