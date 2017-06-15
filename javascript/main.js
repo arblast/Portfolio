@@ -1,5 +1,5 @@
 const NUM_PROJECTS = 3;
-
+const height = 600;
 const PAGES = {
   about: 1,
   projects: 2,
@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const linkedin = document.getElementById('linkedin');
   const git = document.getElementById('git');
   const projectList = document.getElementById('project-list');
-  const height = window.innerHeight;
   let scrollTimer = null;
   let state = {navOpen: false};
   nav.onclick = () => { //function for turning navbar into cross and back

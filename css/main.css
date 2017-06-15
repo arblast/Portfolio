@@ -212,7 +212,7 @@ body, h1, p, a, ul, li {
 /*BLOCKS ON WEBSITE*/
 
 .wrapper {
-  height: 100vh;
+  height: 600px;
   display: block;
 }
 
