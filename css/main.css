@@ -225,7 +225,6 @@ body, h1, p, a, ul, li {
   white-space: nowrap;
   top: 50%;bottom: 10px;
   right: 10px;
-  box-shadow: 6px 6px #262626;
   transform: translateY(-50%);
   margin-left: 50px;
   margin-right: 50px;
