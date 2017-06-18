@@ -120,7 +120,7 @@ body, h1, p, a, ul, li {
 .nav-link:hover {
   color: lightgray;
 }
-300px;
+
 .page-down {
   right: 20px;
 }
@@ -317,8 +317,8 @@ body, h1, p, a, ul, li {
 
 .contact-title {
   text-align: center;
-  padding: 50px;
   font-size: 50px;
+  margin-bottom: 50px;
 }
 
 .contact {
