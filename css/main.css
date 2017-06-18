@@ -221,10 +221,9 @@ body, h1, p, a, ul, li {
 .name {
   position: relative;
   text-align: center;
-  font-size: 120px;
+  font-size: 20vh;
   white-space: nowrap;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 120px 0px;
 }
 
 .name-page {
@@ -236,12 +235,11 @@ body, h1, p, a, ul, li {
 .about-outer {
   position: relative;
   text-align: center;
-  margin: 0 50px;
+  margin: 30px 50px;
 }
 
 .about {
   font-size: 4vh;
-  margin-bottom: 30px;
 }
 
 .links {
@@ -270,8 +268,8 @@ body, h1, p, a, ul, li {
 }
 
 .project-title {
-  padding: 50px;
   font-size: 50px;
+  margin-bottom: 50px;
 }
 
 .recordcloud {
