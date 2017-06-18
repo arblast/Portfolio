@@ -120,7 +120,7 @@ body, h1, p, a, ul, li {
 .nav-link:hover {
   color: lightgray;
 }
-
+300px;
 .page-down {
   right: 20px;
 }
@@ -212,8 +212,8 @@ body, h1, p, a, ul, li {
 /*BLOCKS ON WEBSITE*/
 
 .wrapper {
-  height: 750px;
   display: block;
+  padding: 30px 0;
 }
 
 /*NAME PAGE*/
@@ -223,9 +223,6 @@ body, h1, p, a, ul, li {
   text-align: center;
   font-size: 120px;
   white-space: nowrap;
-  top: 50%;bottom: 10px;
-  right: 10px;
-  transform: translateY(-50%);
   margin-left: 50px;
   margin-right: 50px;
 }
@@ -240,8 +237,6 @@ body, h1, p, a, ul, li {
   position: relative;
   text-align: center;
   margin: 0 50px;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .about {
@@ -300,7 +295,7 @@ body, h1, p, a, ul, li {
 .screenshot {
   margin: 0px 50px 30px 50px;
   cursor: pointer;
-  height: 300px;
+  height: 40vh;
 }
 
 .screenshot-image {
