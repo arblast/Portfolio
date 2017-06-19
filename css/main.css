@@ -250,6 +250,7 @@ body, h1, p, a, ul, li, div {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 5vh;
 }
 
 .link-icon {
