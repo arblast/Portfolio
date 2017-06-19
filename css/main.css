@@ -36,12 +36,14 @@
 
 /*RESET*/
 
-body, h1, p, a, ul, li {
+body, h1, p, a, ul, li, div {
   padding: 0px;
   margin: 0px;
   font-family: 'Josefin Sans', sans-serif;
+  font-size: 4vh;
   color: black;
   cursor: default;
+  list-style: none;
 }
 
 /*NAV AND PAGE DOWN ICONS*/
@@ -251,6 +253,7 @@ body, h1, p, a, ul, li {
 }
 
 .link-icon {
+  cursor: inherit;
   height: 3vh;
   width: 3vh;
   margin-bottom: 2px;
@@ -263,11 +266,12 @@ body, h1, p, a, ul, li {
 }
 
 .links {
+  cursor: inherit;
   padding: 0 6px;
   font-size: 3vh;
 }
 
-.link-container:hover {
+.link-container:hover .links {
   color: red;
   transition: ease 0.5s;
 }
@@ -289,6 +293,14 @@ body, h1, p, a, ul, li {
 .project-title {
   font-size: 50px;
   margin-bottom: 50px;
+}
+
+.record-cloud-icon {
+  background-image: url("../images/rc-icon.png");
+}
+
+.cac-icon {
+  background-image: url("../images/cac-icon.png");
 }
 
 .recordcloud {
