@@ -242,8 +242,23 @@ body, h1, p, a, ul, li {
   font-size: 4vh;
 }
 
-.links {
+.links-container {
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-icon {
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.pdf {
+  background-image: url("../images/pdf.png");
+}
+
+.links {
   display: block;
   cursor: pointer;
 }
