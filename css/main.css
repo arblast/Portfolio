@@ -242,14 +242,16 @@ body, h1, p, a, ul, li {
   font-size: 4vh;
 }
 
-.links-container {
+.link-container {
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 .link-icon {
-  height: 20px;
+  height: 3vh;
+  width: 3vh;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -259,8 +261,9 @@ body, h1, p, a, ul, li {
 }
 
 .links {
-  display: block;
+  padding: 0 6px;
   cursor: pointer;
+  font-size: 3vh;
 }
 
 .links:hover {
