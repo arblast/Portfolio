@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const linkedin = document.getElementById('linkedin');
   const git = document.getElementById('git');
   const projectList = document.getElementById('project-list');
+  const resumeLink = document.getElementById('resumeLink');
   let scrollTimer = null;
   let state = {navOpen: false};
   nav.onclick = () => { //function for turning navbar into cross and back
@@ -77,6 +78,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
   projectList.onclick = (e) => {
     smoothScroll(PROJECTS[e.target.innerHTML]*height);
+  }
+
+  //resume link
+
+  resumeLink.onclick = () => {
+    window.open("https://drive.google.com/open?id=0BweA6dWQFmfseTkxOURfdUxjWWs");
   }
 
   //project screenshot links

@@ -244,6 +244,7 @@ body, h1, p, a, ul, li {
 
 .link-container {
   padding: 10px;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -252,6 +253,7 @@ body, h1, p, a, ul, li {
 .link-icon {
   height: 3vh;
   width: 3vh;
+  margin-bottom: 2px;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -262,11 +264,10 @@ body, h1, p, a, ul, li {
 
 .links {
   padding: 0 6px;
-  cursor: pointer;
   font-size: 3vh;
 }
 
-.links:hover {
+.link-container:hover {
   color: red;
   transition: ease 0.5s;
 }
