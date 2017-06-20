@@ -110,7 +110,7 @@ body, h1, p, a, ul, li, div {
 .nav-link {
   color: white;
   transition: ease 0.4s;
-  padding: 5px;
+  padding: 0.6vw;
 }
 
 .nav-link:hover {
@@ -149,7 +149,7 @@ body, h1, p, a, ul, li, div {
 
 .arrow-line-right {
   position: absolute;
-  top: 3.45vw;
+  top: 3.425vw;
   left: 2.875vw;
   width: .25vw;
   height: 2vw;
@@ -170,7 +170,7 @@ body, h1, p, a, ul, li, div {
 
 .arrow-line-left {
   position: absolute;
-  top: 3.45vw;
+  top: 3.425vw;
   left: 2.875vw;
   width: .25vw;
   height: 2vw;
