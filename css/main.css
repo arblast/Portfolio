@@ -1,14 +1,14 @@
 /*ANIMATIONS*/
 @-webkit-keyframes arrow {
-  0% {top: 5px;}
-  25% {top: 15px;}
-  100% {top: 5px;}
+  0% {top: 1vw;}
+  25% {top: 2vw;}
+  100% {top: 1vw;}
 }
 
 @keyframes arrow {
-  0% {top: 5px;}
-  50% {top: 15px;}
-  100% {top: 5px;}
+  0% {top: 1vw;}
+  50% {top: 2vw;}
+  100% {top: 1vw;}
 }
 
 @-webkit-keyframes arrow-right {
@@ -124,17 +124,17 @@ body, h1, p, a, ul, li, div {
 .arrow-line-down {
   position: absolute;
   top: 0;
-  left: 28.5px;
+  left: 2.875vw;
   background-color: white;
-  width: 3px;
-  height: 35px;
+  width: .25vw;
+  height: 3.5vw;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
 
 .arrow {
   position: relative;
-  top: 5px;
+  top: 1vw;
   transition: ease 0.25s;
 }
 
@@ -149,10 +149,10 @@ body, h1, p, a, ul, li, div {
 
 .arrow-line-right {
   position: absolute;
-  top: 33.8px;
-  left: 28.5px;
-  width: 3px;
-  height: 18px;
+  top: 3.45vw;
+  left: 2.875vw;
+  width: .25vw;
+  height: 2vw;
   transform: rotate(-135deg);
   transform-origin: 50% 0%;
   background-color: white;
@@ -170,10 +170,10 @@ body, h1, p, a, ul, li, div {
 
 .arrow-line-left {
   position: absolute;
-  top: 33.8px;
-  left: 28.5px;
-  width: 3px;
-  height: 18px;
+  top: 3.45vw;
+  left: 2.875vw;
+  width: .25vw;
+  height: 2vw;
   transform: rotate(135deg);
   transform-origin: 50% 0%;
   background-color: white;
