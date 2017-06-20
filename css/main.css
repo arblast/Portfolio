@@ -40,7 +40,7 @@ body, h1, p, a, ul, li, div {
   padding: 0px;
   margin: 0px;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 4vh;
+  font-size: 30px;
   color: black;
   cursor: inherit;
   list-style: none;
@@ -50,10 +50,10 @@ body, h1, p, a, ul, li, div {
 
 .square {
   position: fixed;
-  padding: 10px;
+  padding: 7px 10px;
   top: 20px;
-  width: 60px;
-  height: 50px;
+  width: 4.5vw;
+  height: 4.5vw;
   cursor: pointer;
   background-color: black;
   z-index: 99;
@@ -67,13 +67,13 @@ body, h1, p, a, ul, li, div {
 }
 
 .navicon {
-  margin: 0 10px;
-  width: 40px;
+  margin: 0 .5vw;
+  width: 3.5vw;
 }
 
 .navline {
   height: 3px;
-  width: 40px;
+  width: 3.5vw;
   background-color: white;
   transition: ease 0.4s;
 }
@@ -92,11 +92,11 @@ body, h1, p, a, ul, li, div {
 }
 
 .nav:hover .top {
-  width: 30px;
+  width: 2.75vw;
 }
 
 .nav:hover .bottom {
-  width: 50px;
+  width: 4.25vw;
 }
 
 .nav-open {
@@ -241,7 +241,7 @@ body, h1, p, a, ul, li, div {
 }
 
 .about {
-  font-size: 4vh;
+  font-size: 30px;
 }
 
 .link-container {
