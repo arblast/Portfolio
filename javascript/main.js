@@ -1,10 +1,5 @@
 const NUM_PROJECTS = 3;
 const height = 750;
-const PAGES = {
-  about: 1,
-  projects: 2,
-  contact: 3 + NUM_PROJECTS
-};
 
 const PROJECTS = {
   "Record Cloud": 3,
@@ -29,9 +24,15 @@ document.addEventListener('DOMContentLoaded', function() {
   const git = document.getElementById('git');
   const projectList = document.getElementById('project-list');
   const resumeLink = document.getElementById('resumeLink');
-  let navOpenWidth = navLinks.clientWidth;
   let scrollTimer = null;
   let state = {navOpen: false};
+
+  const PAGES = {
+    about: document.getElementById('aboutStart'),
+    projects: document.getElementById('projectStart'),
+    contact: document.getElementById('contactStart')
+  };
+
   nav.onclick = () => { //function for turning navbar into cross and back
     if (state.navOpen) {
       nav.style.width = "6vw";
@@ -42,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
       navLinks.style.visibility = "hidden";
       navLinks.style.opacity = 0;
     } else {
+      let navOpenWidth = navLinks.clientWidth;
       nav.style.width = `calc(8vw + ${navOpenWidth}px)`;
       navTop.className = "navline top-cross";
       navMid.className = "navline mid-cross";
@@ -54,8 +56,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   navLinks.onclick = (e) => {
     e.stopPropagation();
-    let targetHeight = PAGES[e.target.id]*height;
-    smoothScroll(targetHeight);
+    let heightDiff = PAGES[e.target.id].getBoundingClientRect().top;
+    smoothScroll(heightDiff);
   }
 
   pageDown.onmouseenter = () => {  //scripts for animation of arrow
@@ -118,9 +120,10 @@ document.addEventListener('DOMContentLoaded', function() {
     return Math.round(currentHeight/height);
   }
 
-  function smoothScroll(targetHeight) { //function for smooth scrolling
+  function smoothScroll(diff) { //function for smooth scrolling
     let currentHeight = window.pageYOffset;
-    let interval = (targetHeight - currentHeight)/50;
+    let targetHeight = currentHeight + diff;
+    let interval = diff/50;
     let count = 0;
     let scroll = setInterval(() => {
       currentHeight += interval;

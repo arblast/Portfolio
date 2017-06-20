@@ -238,6 +238,11 @@ body, h1, p, a, ul, li, div {
   font-size: 4vh;
 }
 
+.project-list {
+  display: flex;
+  flex-direction: column;
+}
+
 .link-container {
   padding: 10px;
   cursor: pointer;
