@@ -29,11 +29,12 @@ document.addEventListener('DOMContentLoaded', function() {
   const git = document.getElementById('git');
   const projectList = document.getElementById('project-list');
   const resumeLink = document.getElementById('resumeLink');
+  let navOpenWidth = navLinks.clientWidth;
   let scrollTimer = null;
   let state = {navOpen: false};
   nav.onclick = () => { //function for turning navbar into cross and back
     if (state.navOpen) {
-      nav.className = "square nav";
+      nav.style.width = "6vw";
       navTop.className = "navline top";
       navMid.className = "navline mid";
       navBot.className = "navline bottom";
@@ -41,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
       navLinks.style.visibility = "hidden";
       navLinks.style.opacity = 0;
     } else {
-      nav.className = "square nav nav-open"
+      nav.style.width = `calc(8vw + ${navOpenWidth}px)`;
       navTop.className = "navline top-cross";
       navMid.className = "navline mid-cross";
       navBot.className = "navline bottom-cross";

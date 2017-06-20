@@ -40,7 +40,7 @@ body, h1, p, a, ul, li, div {
   padding: 0px;
   margin: 0px;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 30px;
+  font-size: 4vh;
   color: black;
   cursor: inherit;
   list-style: none;
@@ -50,10 +50,9 @@ body, h1, p, a, ul, li, div {
 
 .square {
   position: fixed;
-  padding: 7px 10px;
   top: 20px;
-  width: 4.5vw;
-  height: 4.5vw;
+  width: 6vw;
+  height: 6vw;
   cursor: pointer;
   background-color: black;
   z-index: 99;
@@ -67,45 +66,40 @@ body, h1, p, a, ul, li, div {
 }
 
 .navicon {
-  margin: 0 .5vw;
-  width: 3.5vw;
+  margin: 0 1.5vw;
+  width: 3vw;
 }
 
 .navline {
-  height: 3px;
-  width: 3.5vw;
+  height: .25vw;
+  width: 3vw;
   background-color: white;
   transition: ease 0.4s;
 }
 
 .top {
-  margin-bottom: 10px;
+  margin-bottom: 1vw;
 }
 
 .middle {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
 }
 
 .bottom {
-  margin-top: 10px;
+  margin-top: 1vw;
 }
 
 .nav:hover .top {
-  width: 2.75vw;
+  width: 2vw;
 }
 
 .nav:hover .bottom {
-  width: 4.25vw;
-}
-
-.nav-open {
-  width: 260px;
+  width: 4vw;
 }
 
 .nav-links {
-  width: 180px;
-  margin: 0 10px;
+  margin: 0 1vw;
   visibility: hidden;
   opacity: 0;
   display: flex;
@@ -196,19 +190,19 @@ body, h1, p, a, ul, li, div {
 }
 
 .top-cross {
-  margin-bottom: 10px;
-  transform: translateY(13px) rotate(45deg);
+  margin-bottom: 1vw;
+  transform: translateY(1.25vw) rotate(45deg);
 }
 
 .mid-cross {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
   background-color: black;
 }
 
 .bottom-cross {
-  margin-top: 10px;
-  transform: translateY(-13px) rotate(-45deg);
+  margin-top: 1vw;
+  transform: translateY(-1.25vw) rotate(-45deg);
 }
 
 /*BLOCKS ON WEBSITE*/
@@ -241,7 +235,7 @@ body, h1, p, a, ul, li, div {
 }
 
 .about {
-  font-size: 30px;
+  font-size: 4vh;
 }
 
 .link-container {
