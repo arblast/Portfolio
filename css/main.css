@@ -40,7 +40,7 @@ body, h1, p, a, ul, li, div {
   padding: 0px;
   margin: 0px;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 4vh;
+  font-size: 2.5vw;
   color: black;
   cursor: inherit;
   list-style: none;
@@ -109,6 +109,7 @@ body, h1, p, a, ul, li, div {
 
 .nav-link {
   color: white;
+  font-size: 3vw;
   transition: ease 0.4s;
   padding: 0.6vw;
 }
@@ -217,7 +218,7 @@ body, h1, p, a, ul, li, div {
 .name {
   position: relative;
   text-align: center;
-  font-size: 20vh;
+  font-size: 15vw;
   white-space: nowrap;
   margin: 120px 0px;
 }
@@ -235,7 +236,7 @@ body, h1, p, a, ul, li, div {
 /* ABOUT PAGE */
 
 .about {
-  font-size: 4vh;
+  font-size: 2.5vw;
 }
 
 .project-list {
@@ -244,7 +245,7 @@ body, h1, p, a, ul, li, div {
 }
 
 .link-container {
-  padding: 10px;
+  padding: 1vh 1vw 1vh 0;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -254,7 +255,6 @@ body, h1, p, a, ul, li, div {
 .link-icon {
   height: 4vh;
   width: 4vh;
-  margin-bottom: 1px;
   background-size: contain;
   background-repeat: no-repeat;
   transition: 0.3s ease;
@@ -266,7 +266,7 @@ body, h1, p, a, ul, li, div {
 
 .links {
   padding: 0 6px;
-  font-size: 4vh;
+  font-size: 2.5vw;
 }
 
 .link-container:hover .links {
@@ -330,19 +330,19 @@ body, h1, p, a, ul, li, div {
 .screenshot {
   margin-bottom: 30px;
   cursor: pointer;
-  height: 40vh;
+  width: 50vw;
 }
 
 .screenshot-image {
   position: relative;
   bottom: 0px;
   right: 0px;
-  height: 100%;
+  width: 100%;
   transition: ease 0.5s;
 }
 
 .screenshot:hover .screenshot-image {
-  height: 110%;
+  width: 110%;
 }
 
 /*CONTACT*/
