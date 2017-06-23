@@ -287,7 +287,6 @@ body, h1, p, a, ul, li, div {
 /*PROJECTS*/
 
 .project {
-  height: 0;
   opacity: 0;
   display: none;
 }

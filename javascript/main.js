@@ -80,10 +80,18 @@ document.addEventListener('DOMContentLoaded', function() {
   //project nav
 
   const projectNavs = projectList.getElementsByClassName("link-container");
-  const previewList = document.getElementsByClassName("project-preview")
+  const previewList = document.getElementsByClassName("project-preview");
+  const projectPages = document.getElementsByClassName("project");
   for (let i=0; i<3;i++) {
     projectNavs[i].onmouseover = () => {previewList[i].style.opacity = 100};
     projectNavs[i].onmouseleave = () => {previewList[i].style.opacity = 0};
+    projectNavs[i].onclick = () => {
+      let clickedProject = projectPages[i];
+      clickedProject.style.display = "block";
+      clickedProject.style.opacity = 100;
+      let heightDiff = PAGES.projects.getBoundingClientRect().bottom;
+      smoothScroll(heightDiff);
+    }
   }
 
   //resume link
