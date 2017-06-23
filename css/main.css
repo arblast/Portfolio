@@ -286,7 +286,9 @@ body, h1, p, a, ul, li, div {
 /*PROJECTS*/
 
 .project {
-  text-align: left;
+  height: 0;
+  opacity: 0;
+  display: none;
 }
 
 .project-main {
@@ -341,9 +343,9 @@ body, h1, p, a, ul, li, div {
   transition: ease 0.5s;
 }
 
-.screenshot:hover .screenshot-image {
+/*.screenshot:hover .screenshot-image {
   width: 110%;
-}
+}*/
 
 /*CONTACT*/
 
