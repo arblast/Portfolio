@@ -289,6 +289,9 @@ body, h1, p, a, ul, li, div {
 .project {
   opacity: 0;
   display: none;
+  transition-timing-function: ease;
+  transition-duration: 0.5s;
+  transition-delay: 0.5s;
 }
 
 .project-main {
