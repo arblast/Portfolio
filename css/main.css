@@ -240,6 +240,7 @@ body, h1, p, a, ul, li, div {
 }
 
 .project-list {
+  margin-top: 3vh;
   display: flex;
   flex-direction: column;
 }
