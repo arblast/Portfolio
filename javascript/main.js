@@ -79,8 +79,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   //project nav
 
-  projectList.onclick = (e) => {
-    smoothScroll(PROJECTS[e.target.innerHTML]*height);
+  const projectNavs = projectList.getElementsByClassName("link-container");
+  const previewList = document.getElementsByClassName("project-preview")
+  for (let i=0; i<3;i++) {
+    projectNavs[i].onmouseover = () => {previewList[i].style.opacity = 100};
+    projectNavs[i].onmouseleave = () => {previewList[i].style.opacity = 0};
   }
 
   //resume link

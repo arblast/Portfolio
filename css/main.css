@@ -324,6 +324,28 @@ body, h1, p, a, ul, li, div {
   background-color: pink;
 }
 
+.project-preview {
+  position: absolute;
+  height: 20vh;
+  width: 20vh;
+  bottom: 0;
+  right: 10vw;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.rc-prev {
+  background-color: pink;
+}
+
+.cac-prev {
+  background-color: grey;
+}
+
+.pae-prev {
+  background-color: lightblue;
+}
+
 .project-content {
   display: flex;
   flex-direction: column;
