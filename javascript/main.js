@@ -87,8 +87,9 @@ document.addEventListener('DOMContentLoaded', function() {
     projectNavs[i].onmouseleave = () => {previewList[i].style.opacity = 0};
     projectNavs[i].onclick = () => {
       let clickedProject = projectPages[i];
+      let projectContent = clickedProject.getElementsByClassName("project-content")[0];
       clickedProject.style.display = "block";
-      clickedProject.style.opacity = 100;
+      setTimeout(() => {projectContent.style.opacity = 100;}, 500);
       let heightDiff = PAGES.projects.getBoundingClientRect().bottom;
       smoothScroll(heightDiff);
     }

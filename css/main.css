@@ -287,7 +287,6 @@ body, h1, p, a, ul, li, div {
 /*PROJECTS*/
 
 .project {
-  opacity: 0;
   display: none;
   transition-timing-function: ease;
   transition-duration: 0.5s;
@@ -350,8 +349,10 @@ body, h1, p, a, ul, li, div {
 }
 
 .project-content {
+  opacity: 0;
   display: flex;
   flex-direction: column;
+  transition: 1s ease;
 }
 
 .screenshot {
