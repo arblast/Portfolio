@@ -210,7 +210,6 @@ body, h1, p, a, ul, li, div {
 
 .wrapper {
   display: block;
-  padding: 30px 0;
 }
 
 /*NAME PAGE*/
@@ -220,7 +219,6 @@ body, h1, p, a, ul, li, div {
   text-align: center;
   font-size: 15vw;
   white-space: nowrap;
-  margin: 120px 0px;
 }
 
 .name-page {
@@ -230,7 +228,7 @@ body, h1, p, a, ul, li, div {
 .outer {
   position: relative;
   text-align: left;
-  margin: 10vh 10vw;
+  padding: 10vh 10vw;
 }
 
 /* ABOUT PAGE */
@@ -287,10 +285,7 @@ body, h1, p, a, ul, li, div {
 /*PROJECTS*/
 
 .project {
-  display: none;
-  transition-timing-function: ease;
-  transition-duration: 0.5s;
-  transition-delay: 0.5s;
+  height: 0;
 }
 
 .project-main {
@@ -330,7 +325,7 @@ body, h1, p, a, ul, li, div {
   position: absolute;
   height: 20vh;
   width: 20vh;
-  bottom: 0;
+  bottom: 10vh;
   right: 10vw;
   opacity: 0;
   transition: 0.5s ease;
