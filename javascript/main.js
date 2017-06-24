@@ -1,5 +1,4 @@
 const NUM_PROJECTS = 3;
-const height = 750;
 
 const PROJECTS = {
   "Record Cloud": 3,
@@ -74,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   pageDown.onclick = () => { //script for down arrow
     clearTimeout(scrollTimer);
-    smoothScroll((closestSection()+1)*height);
+    smoothScroll(PAGES.about.getBoundingClientRect().top);
   };
 
   //project nav
@@ -128,10 +127,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
   //SCROLLING
 
-  function closestSection() { //function to find the closest section
-    let currentHeight = window.pageYOffset;
-    return Math.round(currentHeight/height);
-  }
+  // function closestSection() { //function to find the closest section
+  //   let currentHeight = window.pageYOffset;
+  //   return Math.round(currentHeight/height);
+  // }
 
   function smoothScroll(diff) { //function for smooth scrolling
     let currentHeight = window.pageYOffset;
