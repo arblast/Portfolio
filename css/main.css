@@ -40,7 +40,7 @@ body, h1, p, a, ul, li, div {
   padding: 0px;
   margin: 0px;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 2.5vw;
+  font-size: 2.25vw;
   color: black;
   cursor: inherit;
   list-style: none;
@@ -228,13 +228,12 @@ body, h1, p, a, ul, li, div {
 .outer {
   position: relative;
   text-align: left;
-  padding: 10vh 10vw;
+  padding: 13vh 10vw;
 }
 
 /* ABOUT PAGE */
 
 .about {
-  font-size: 2.5vw;
 }
 
 .project-list {
@@ -265,7 +264,6 @@ body, h1, p, a, ul, li, div {
 
 .links {
   padding: 0 6px;
-  font-size: 2.5vw;
 }
 
 .link-container:hover .links {
@@ -325,8 +323,8 @@ body, h1, p, a, ul, li, div {
   position: absolute;
   height: 20vh;
   width: 20vh;
-  bottom: 10vh;
-  right: 10vw;
+  bottom: 13vh;
+  right: 13vw;
   opacity: 0;
   transition: 0.5s ease;
 }
