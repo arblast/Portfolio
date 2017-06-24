@@ -89,7 +89,8 @@ document.addEventListener('DOMContentLoaded', function() {
       let clickedProject = projectPages[i];
       let projectContent = clickedProject.getElementsByClassName("project-content")[0];
       clickedProject.style.display = "block";
-      setTimeout(() => {projectContent.style.opacity = 100;}, 500);
+      clickedProject.style.height = `calc(26vh + ${projectContent.clientHeight}px)`;
+      setTimeout(() => {projectContent.style.opacity = 100;}, 1500);
       let heightDiff = PAGES.projects.getBoundingClientRect().bottom;
       smoothScroll(heightDiff);
     }

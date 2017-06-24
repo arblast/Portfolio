@@ -284,6 +284,9 @@ body, h1, p, a, ul, li, div {
 
 .project {
   height: 0;
+  display: none;
+  transition-duration: 1s;
+  transition-delay: 0.5s;
 }
 
 .project-main {
