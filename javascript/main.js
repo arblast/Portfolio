@@ -7,6 +7,7 @@ const PROJECTS = {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+  const body = document.getElementById("body");
   const nav = document.getElementById('nav');
   const navLinks = document.getElementById('nav-links');
   const pageDown = document.getElementById('pageDown');
@@ -85,13 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
     projectNavs[i].onmouseover = () => {previewList[i].style.opacity = 100};
     projectNavs[i].onmouseleave = () => {previewList[i].style.opacity = 0};
     projectNavs[i].onclick = () => {
-      let clickedProject = projectPages[i];
-      let projectContent = clickedProject.getElementsByClassName("project-content")[0];
-      clickedProject.style.display = "block";
-      clickedProject.style.height = `calc(26vh + ${projectContent.clientHeight}px)`;
-      setTimeout(() => {projectContent.style.opacity = 100;}, 1500);
-      let heightDiff = PAGES.projects.getBoundingClientRect().bottom;
-      smoothScroll(heightDiff);
+      body.className = "scroll-stop";
     }
   }
 

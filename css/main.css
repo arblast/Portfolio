@@ -282,6 +282,21 @@ body, h1, p, a, ul, li, div {
 
 /*PROJECTS*/
 
+.scroll-stop {
+  overflow: hidden;
+}
+
+.modal-back {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.4;
+}
+
 .project {
   height: 0;
   display: none;
