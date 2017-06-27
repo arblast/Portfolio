@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
       let clickedProject = projectPages[i];
       let projectContent = clickedProject.getElementsByClassName("project-content")[0];
       clickedProject.style.display = "block";
-      clickedProject.style.height = `70%`;
+      setTimeout(() => {clickedProject.style.height = "70%";}, 100);
       setTimeout(() => {projectContent.style.opacity = 100;}, 1500);
     }
   }
