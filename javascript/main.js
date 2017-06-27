@@ -7,7 +7,6 @@ const PROJECTS = {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  const body = document.getElementById("body");
   const nav = document.getElementById('nav');
   const navLinks = document.getElementById('nav-links');
   const pageDown = document.getElementById('pageDown');
@@ -24,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const git = document.getElementById('git');
   const projectList = document.getElementById('project-list');
   const resumeLink = document.getElementById('resumeLink');
+  const modalBackground = document.getElementById('modalBackground');
   let scrollTimer = null;
   let state = {navOpen: false};
 
@@ -86,7 +86,18 @@ document.addEventListener('DOMContentLoaded', function() {
     projectNavs[i].onmouseover = () => {previewList[i].style.opacity = 100};
     projectNavs[i].onmouseleave = () => {previewList[i].style.opacity = 0};
     projectNavs[i].onclick = () => {
-      body.className = "scroll-stop";
+      modalBackground.style.display = "block";
+      let clickedProject = projectPages[i];
+      let projectContent = clickedProject.getElementsByClassName("project-content")[0];
+      clickedProject.style.display = "block";
+      clickedProject.style.height = `70%`;
+      setTimeout(() => {projectContent.style.opacity = 100;}, 1500);
+    }
+  }
+
+  window.onclick = (e) => {
+    if (e.target == modalBackground) {
+      modalBackground.style.display = "none";
     }
   }
 
