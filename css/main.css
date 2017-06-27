@@ -217,7 +217,7 @@ body, h1, p, a, ul, li, div {
 .name {
   position: relative;
   text-align: center;
-  font-size: 15vw;
+  font-size: 12vw;
   white-space: nowrap;
 }
 
@@ -315,8 +315,8 @@ body, h1, p, a, ul, li, div {
 }
 
 .project-title {
-  font-size: 50px;
-  margin-bottom: 50px;
+  font-size: 5vw;
+  margin-bottom: 8vh;
 }
 
 .record-cloud-icon {
@@ -394,8 +394,8 @@ body, h1, p, a, ul, li, div {
 /*CONTACT*/
 
 .contact-title {
-  font-size: 50px;
-  margin-bottom: 50px;
+  font-size: 5vw;
+  margin-bottom: 8vh;
 }
 
 .contact {
