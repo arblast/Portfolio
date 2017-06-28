@@ -25,7 +25,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const resumeLink = document.getElementById('resumeLink');
   const modalBackground = document.getElementById('modalBackground');
   let scrollTimer = null;
-  let state = {navOpen: false};
+  let state = {
+    navOpen: false,
+    openedProject: null
+  };
 
   const PAGES = {
     about: document.getElementById('aboutStart'),
@@ -88,14 +91,21 @@ document.addEventListener('DOMContentLoaded', function() {
     projectNavs[i].onclick = () => {
       modalBackground.className = "modal-back modal-open";
       let clickedProject = projectPages[i];
-      clickedProject.className += " project-open";
+      clickedProject.className = "project project-open";
+      state.openedProject = i;
     }
   }
 
   window.onclick = (e) => {
-    if (e.target == modalBackground) {
-      modalBackground.className = "modal-back modal-close";
+    if (e.target == modalBackground && typeof state.openedProject == "number") {
+      closeModal();
     }
+  }
+
+  function closeModal() {
+    modalBackground.className = "modal-back modal-close";
+    projectPages[state.openedProject].className = "project project-close";
+    state.openedProject = null;
   }
 
   //resume link

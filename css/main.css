@@ -347,13 +347,18 @@ body, h1, p, a, ul, li, div {
 
 .modal-close {
   transform: scale(1);
-  animation: unfoldOut 1s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  animation: unfoldOut 1s .4s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
 }
 
 .project {
   padding: 6vh 6vw;
   background-color: pink;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 70%;
   width: 70%;
   overflow-y: scroll;
   margin: auto;
