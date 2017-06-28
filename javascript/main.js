@@ -86,18 +86,15 @@ document.addEventListener('DOMContentLoaded', function() {
     projectNavs[i].onmouseover = () => {previewList[i].style.opacity = 100};
     projectNavs[i].onmouseleave = () => {previewList[i].style.opacity = 0};
     projectNavs[i].onclick = () => {
-      modalBackground.style.display = "block";
+      modalBackground.className = "modal-back modal-open";
       let clickedProject = projectPages[i];
-      let projectContent = clickedProject.getElementsByClassName("project-content")[0];
-      clickedProject.style.display = "block";
-      setTimeout(() => {clickedProject.style.height = "70%";}, 100);
-      setTimeout(() => {projectContent.style.opacity = 100;}, 1500);
+      clickedProject.className += " project-open";
     }
   }
 
   window.onclick = (e) => {
     if (e.target == modalBackground) {
-      modalBackground.style.display = "none";
+      modalBackground.className = "modal-back modal-close";
     }
   }
 
