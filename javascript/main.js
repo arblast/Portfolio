@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const git = document.getElementById('git');
   const projectList = document.getElementById('project-list');
   const resumeLink = document.getElementById('resumeLink');
+  const modalClose = document.getElementById('close');
   const modalBackground = document.getElementById('modalBackground');
   let scrollTimer = null;
   let state = {
@@ -97,7 +98,8 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   window.onclick = (e) => {
-    if (e.target == modalBackground && typeof state.openedProject == "number") {
+    if ((e.target == modalBackground || e.target == modalClose)
+    && typeof state.openedProject == "number") {
       closeModal();
     }
   }
