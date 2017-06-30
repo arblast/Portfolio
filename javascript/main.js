@@ -6,6 +6,18 @@ const PROJECTS = {
   "Puzzle and Elements": 5
 }
 
+const LIVE_LINKS = [
+  "https://www.record-cloud.com/",
+  "https://chrome.google.com/webstore/detail/chrome-audio-capture/kfokdmfpdnokpmpbjhjbcabgligoelgp",
+  "https://arblast.github.io/Puzzle-and-Elements/"
+]
+
+const GIT_LINKS = [
+  "https://github.com/arblast/Online-Recorder",
+  "https://github.com/arblast/Chrome-Audio-Capturer",
+  "https://github.com/arblast/Puzzle-and-Elements"
+]
+
 document.addEventListener('DOMContentLoaded', function() {
   const nav = document.getElementById('nav');
   const navLinks = document.getElementById('nav-links');
@@ -86,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const projectNavs = projectList.getElementsByClassName("link-container");
   const previewList = document.getElementsByClassName("project-preview");
   const projectPages = document.getElementsByClassName("project");
-  for (let i=0; i<3;i++) {
+  for (let i=0; i < NUM_PROJECTS; i++) {
     projectNavs[i].onmouseover = () => {previewList[i].style.opacity = 100};
     projectNavs[i].onmouseleave = () => {previewList[i].style.opacity = 0};
     projectNavs[i].onclick = () => {
@@ -127,6 +139,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
   PAESS.onclick = () => {
     window.open("https://arblast.github.io/Puzzle-and-Elements/");
+  }
+
+  //project live and gitlinks
+
+  for(let i = 0; i < NUM_PROECTS; i++) {
+    let projectLinks = projectPages[i].getElementsByClassName
   }
 
   //Contact Links
