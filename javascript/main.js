@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
   const PAGES = {
+    top: document.getElementById('top'),
     about: document.getElementById('aboutStart'),
     projects: document.getElementById('projectStart'),
     contact: document.getElementById('contactStart')
@@ -77,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   pageDown.onclick = () => { //script for down arrow
     clearTimeout(scrollTimer);
-    smoothScroll(PAGES.about.getBoundingClientRect().top);
+    smoothScroll(PAGES.top.getBoundingClientRect().top);
   };
 
   //project nav
