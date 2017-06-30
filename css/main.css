@@ -1,37 +1,37 @@
 /*ANIMATIONS*/
 @-webkit-keyframes arrow {
-  0% {top: 1vw;}
-  25% {top: 2vw;}
-  100% {top: 1vw;}
+  0% {top: 1.3vw;}
+  25% {top: 0.75vw;}
+  100% {top: 1.3vw;}
 }
 
 @keyframes arrow {
-  0% {top: 1vw;}
-  50% {top: 2vw;}
-  100% {top: 1vw;}
+  0% {top: 1.3vw;}
+  50% {top: 0.75vw;}
+  100% {top: 1.3vw;}
 }
 
 @-webkit-keyframes arrow-right {
-  0% {transform: rotate(-135deg);}
-  50% {transform: rotate(-150deg);}
-  100% {transform: rotate(-135deg);}
+  0% {transform: rotate(-45deg);}
+  50% {transform: rotate(-30deg);}
+  100% {transform: rotate(-45deg);}
 }
 
 @keyframes arrow-right {
-  0% {transform: rotate(-135deg);}
-  50% {transform: rotate(-150deg);}
-  100% {transform: rotate(-135deg);}
+  0% {transform: rotate(-45deg);}
+  50% {transform: rotate(-30deg);}
+  100% {transform: rotate(-45deg);}
 }
 @-webkit-keyframes arrow-left {
-  0% {transform: rotate(-135deg);}
-  50% {transform: rotate(-150deg);}
-  100% {transform: rotate(-135deg);}
+  0% {transform: rotate(45deg);}
+  50% {transform: rotate(30deg);}
+  100% {transform: rotate(45deg);}
 }
 
 @keyframes arrow-left {
-  0% {transform: rotate(135deg);}
-  50% {transform: rotate(150deg);}
-  100% {transform: rotate(135deg);}
+  0% {transform: rotate(45deg);}
+  50% {transform: rotate(30deg);}
+  100% {transform: rotate(45deg);}
 }
 
 @keyframes unfoldIn {
@@ -172,13 +172,13 @@ body, h1, p, a, ul, li, div {
   background-color: white;
   width: .25vw;
   height: 3.5vw;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 .arrow {
   position: relative;
-  top: 1vw;
+  top: 1.3vw;
   transition: ease 0.25s;
 }
 
@@ -193,14 +193,14 @@ body, h1, p, a, ul, li, div {
 
 .arrow-line-right {
   position: absolute;
-  top: 3.425vw;
+  top: 0.03vw;
   left: 2.875vw;
   width: .25vw;
   height: 2vw;
-  transform: rotate(-135deg);
+  transform: rotate(-45deg);
   transform-origin: 50% 0%;
   background-color: white;
-  border-top-left-radius: 1px;
+  border-top-right-radius: 1.5px;
 }
 
 .right-arrow-animation {
@@ -214,14 +214,14 @@ body, h1, p, a, ul, li, div {
 
 .arrow-line-left {
   position: absolute;
-  top: 3.425vw;
+  top: 0.03vw;
   left: 2.875vw;
   width: .25vw;
   height: 2vw;
-  transform: rotate(135deg);
+  transform: rotate(45deg);
   transform-origin: 50% 0%;
   background-color: white;
-  border-top-right-radius: 1px;
+  border-top-left-radius: 1.5px;
 }
 
 .left-arrow-animation {
