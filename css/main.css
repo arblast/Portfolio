@@ -87,6 +87,7 @@ body, h1, p, a, ul, li, div {
   color: black;
   cursor: inherit;
   list-style: none;
+  text-decoration: none;
 }
 
 /*NAV AND PAGE DOWN ICONS*/
@@ -440,7 +441,7 @@ body, h1, p, a, ul, li, div {
 }
 
 .pae-prev {
-  background-color: lightblue;
+  background-color: lightbmailto:someone@example.comlue;
 }
 
 .project-content {
