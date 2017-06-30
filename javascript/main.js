@@ -143,8 +143,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
   //project live and gitlinks
 
-  for(let i = 0; i < NUM_PROECTS; i++) {
-    let projectLinks = projectPages[i].getElementsByClassName
+  for(let i = 0; i < NUM_PROJECTS; i++) {
+    let projectLinks = projectPages[i].getElementsByClassName("project-links")[0].children
+    projectLinks[0].onclick = () => {window.open(LIVE_LINKS[i])};
+    projectLinks[1].onclick = () => {window.open(GIT_LINKS[i])};
   }
 
   //Contact Links
