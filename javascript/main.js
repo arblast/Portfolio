@@ -130,15 +130,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
   //project screenshot links
   recordCloudSS.onclick = () => {
-    window.open("https://www.record-cloud.com/");
+    window.open(LIVE_LINKS[0]);
   }
 
   CACSS.onclick = () => {
-    window.open("https://chrome.google.com/webstore/detail/chrome-audio-capture/kfokdmfpdnokpmpbjhjbcabgligoelgp");
+    window.open(LIVE_LINKS[1]);
   }
 
   PAESS.onclick = () => {
-    window.open("https://arblast.github.io/Puzzle-and-Elements/");
+    window.open(LIVE_LINKS[2]);
   }
 
   //project live and gitlinks
