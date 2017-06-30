@@ -450,6 +450,11 @@ body, h1, p, a, ul, li, div {
   transition: 1s ease;
 }
 
+.project-description {
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
 .screenshot {
   margin-bottom: 30px;
   cursor: pointer;
