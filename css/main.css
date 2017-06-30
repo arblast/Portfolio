@@ -277,6 +277,7 @@ body, h1, p, a, ul, li, div {
 /* ABOUT PAGE */
 
 .about {
+  margin-bottom: 2vh;
 }
 
 .project-list {
@@ -478,7 +479,7 @@ body, h1, p, a, ul, li, div {
   background-color: lightblue;
 }
 
-.contact-links {
+.contact-links, .project-links {
   display: flex;
   justify-content: flex-start;
 }
