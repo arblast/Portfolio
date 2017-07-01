@@ -116,6 +116,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
+  window.addEventListener("touchstart", (e) => {
+    if ((e.target == modalBackground || e.target.className == "close")
+    && typeof state.openedProject == "number") {
+      closeModal();
+    }
+  })
+
   function closeModal() {
     modalBackground.className = "modal-back modal-close";
     projectPages[state.openedProject].className = "project project-close";
