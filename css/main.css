@@ -364,7 +364,7 @@ body, h1, p, a, ul, li, div {
     top: 2vh;
     right: 2vw;
     font-style: verdana;
-    font-size: 4vw;
+    font-size: 2vw;
     font-weight: bold;
     transition: 0.3s ease;
 }
