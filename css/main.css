@@ -384,8 +384,8 @@ body, h1, p, a, ul, li, div {
   left: 0;
   bottom: 0;
   right: 0;
-  height: 70%;
-  max-width: 70%;
+  max-height: 70%;
+  width: 70%;
   overflow-y: scroll;
   margin: auto;
   transform: scale(0);
