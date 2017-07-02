@@ -433,15 +433,21 @@ body, h1, p, a, ul, li, div {
 }
 
 .rc-prev {
-  background-color: pink;
+  background-image: url("../images/recordcloudprev.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .cac-prev {
-  background-color: grey;
+  background-image: url("../images/cac.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .pae-prev {
-  background-color: lightbmailto:someone@example.comlue;
+  background-image: url("../images/pae.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .project-content {
