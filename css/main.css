@@ -433,7 +433,7 @@ body, h1, p, a, ul, li, div {
 }
 
 .rc-prev {
-  background-image: url("../images/recordcloudprev.png");
+  background-image: url("../images/rc-prev.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
