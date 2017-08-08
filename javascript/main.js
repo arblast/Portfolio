@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
   //resume link
 
   resumeLink.onclick = () => {
-    window.open("https://drive.google.com/open?id=0BweA6dWQFmfseTkxOURfdUxjWWs");
+    window.open("https://drive.google.com/file/d/0BweA6dWQFmfsSlNQc1NSS2RYQ00/view?usp=sharing");
   }
 
   //project screenshot links
